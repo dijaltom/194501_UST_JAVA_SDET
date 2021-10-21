@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Default Parameter Values</h2>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(x, y = 10) {
+  // y is 10 if not passed or undefined
+  return x + y;
+}
+document.getElementById("demo").innerHTML = myFunction(5);
+</script>
+
+</body>
+</html>
+

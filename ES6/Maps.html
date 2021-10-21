@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Js map objeccts</h2>
+        <p>Objects as keys in a map</p>
+        <p id="demo"></p>
+
+        <script>
+            const a = {name:'apple'};
+            const b = {name:'Bananas'};
+            const c = {name:'Oranges'};
+
+            const fruits = new Map();
+            fruits.set(a,500);
+            fruits.set(b,300);
+            fruits.set(c,200);
+
+            document.getElementById("demo").innerHTML=fruits;
+
+        </script>
+    </body>
+</html>
