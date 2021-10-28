@@ -1,0 +1,133 @@
+<html> 
+<head>
+    <title>
+        Registration Page
+    </title>
+</head>
+
+<body bgcolor="Lightskyblue">
+    <br>
+    <br>
+    <form name="reg">
+        <table>
+
+            <tr>
+                <td>
+                    Firstname
+                </td>
+                <td>
+                    <input type="text" name="firstname" size="15" />
+                </td>
+
+
+            <tr>
+                <td>Middlename: </td>
+                <td>
+                    <input type="text" name="middlename" size="15" />
+                </td>
+
+            </tr>
+            <td>
+                Lastname: </td>
+            <td>
+                <input type="text" name="lastname" size="15" />
+            </td>
+            <tr>
+            <tr>
+            <tr>
+                <td style="font-weight: bold;
+                           text-transform: capitalize; ">
+                    course
+                </td>
+            </tr>
+            <tr>
+            <tr></tr>
+            <td>
+                <select>
+                    <option value="Course">Course</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="M.Tech">M.Tech</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;
+                          text-transform: capitalize; ">
+                    gender
+                </td>
+            </tr>
+            <tr>
+            <tr></tr>
+            <td>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="male" /> Male <br>
+                    <input type="radio" name="female" /> Female <br>
+                    <input type="radio" name="other" /> Other
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;
+                              text-transform: capitalize; ">
+                    Phone
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <input type="text" name="country code" value="+91" size="2" />
+
+                    <input type="text" style="width: 150px;" name="phone" size="10" />
+                </td>
+
+            </tr>
+            <tr>
+            <tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                    <label for="vehicle1"> i have accepted the terms and conditions</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <td>
+            <input type="submit" value="Submit" />
+        </td>
+        </table>
+    </form>
+      
+    <script>
+        var mainApp = angular.module("mainApp", []);
+        
+        mainApp.controller('studentController', function($scope) {
+           $scope.student = {
+              firstName: "Mahesh",
+              lastName: "Parashar",
+              fees:500,
+              
+              subjects:[
+                 {name:'Physics',marks:70},
+                 {name:'Chemistry',marks:80},
+                 {name:'Math',marks:65},
+                 {name:'English',marks:75},
+                 {name:'Hindi',marks:67}
+              ],
+              fullName: function() {
+                 var studentObject;
+                 studentObject = $scope.student;
+                 return studentObject.firstName + " " + studentObject.lastName;
+              }
+           };
+        });
+     </script>
+</body>
+
+</html>
