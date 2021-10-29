@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-29T17:05:22 GMT+05:30" name="Default suite" finished-at="2021-10-29T17:05:46 GMT+05:30" duration-ms="23904">
+    <groups>
+    </groups>
+    <test started-at="2021-10-29T17:05:22 GMT+05:30" name="Default test" finished-at="2021-10-29T17:05:46 GMT+05:30" duration-ms="23904">
+      <class name="NewTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:NewTest@f0da945]" started-at="2021-10-29T17:05:22 GMT+05:30" name="beforeTest" finished-at="2021-10-29T17:05:28 GMT+05:30" duration-ms="5636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="a()[pri:0, instance:NewTest@f0da945]" started-at="2021-10-29T17:05:28 GMT+05:30" name="a" finished-at="2021-10-29T17:05:28 GMT+05:30" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a -->
+        <test-method signature="f()[pri:0, instance:NewTest@f0da945]" started-at="2021-10-29T17:05:28 GMT+05:30" name="f" finished-at="2021-10-29T17:05:30 GMT+05:30" duration-ms="1604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="f1()[pri:0, instance:NewTest@f0da945]" started-at="2021-10-29T17:05:30 GMT+05:30" name="f1" finished-at="2021-10-29T17:05:33 GMT+05:30" duration-ms="2929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method signature="f2()[pri:0, instance:NewTest@f0da945]" started-at="2021-10-29T17:05:33 GMT+05:30" name="f2" finished-at="2021-10-29T17:05:37 GMT+05:30" duration-ms="4039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method signature="f3()[pri:0, instance:NewTest@f0da945]" started-at="2021-10-29T17:05:37 GMT+05:30" name="f3" finished-at="2021-10-29T17:05:38 GMT+05:30" duration-ms="1385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f3 -->
+        <test-method signature="f4()[pri:0, instance:NewTest@f0da945]" started-at="2021-10-29T17:05:38 GMT+05:30" name="f4" finished-at="2021-10-29T17:05:38 GMT+05:30" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f4 -->
+        <test-method signature="f5()[pri:0, instance:NewTest@f0da945]" started-at="2021-10-29T17:05:38 GMT+05:30" name="f5" finished-at="2021-10-29T17:05:38 GMT+05:30" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f5 -->
+        <test-method signature="f6()[pri:0, instance:NewTest@f0da945]" started-at="2021-10-29T17:05:38 GMT+05:30" name="f6" finished-at="2021-10-29T17:05:39 GMT+05:30" duration-ms="713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f6 -->
+        <test-method signature="f7()[pri:0, instance:NewTest@f0da945]" started-at="2021-10-29T17:05:39 GMT+05:30" name="f7" finished-at="2021-10-29T17:05:44 GMT+05:30" duration-ms="5078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f7 -->
+        <test-method signature="m()[pri:0, instance:NewTest@f0da945]" started-at="2021-10-29T17:05:44 GMT+05:30" name="m" finished-at="2021-10-29T17:05:46 GMT+05:30" duration-ms="2138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m -->
+        <test-method is-config="true" signature="ms()[pri:0, instance:NewTest@f0da945]" started-at="2021-10-29T17:05:46 GMT+05:30" name="ms" finished-at="2021-10-29T17:05:46 GMT+05:30" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ms -->
+      </class> <!-- NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
