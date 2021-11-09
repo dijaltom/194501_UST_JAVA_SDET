@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="21419" started-at="2021-11-09T09:39:47 GMT+05:30" finished-at="2021-11-09T09:40:08 GMT+05:30">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="21419" started-at="2021-11-09T09:39:47 GMT+05:30" finished-at="2021-11-09T09:40:08 GMT+05:30">
+      <class name="Example.Test1">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Example.Test1@6e1ec318]" name="beforeTest" is-config="true" duration-ms="6781" started-at="2021-11-09T09:39:47 GMT+05:30" finished-at="2021-11-09T09:39:53 GMT+05:30">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="a()[pri:0, instance:Example.Test1@6e1ec318]" name="a" duration-ms="15" started-at="2021-11-09T09:39:53 GMT+05:30" finished-at="2021-11-09T09:39:53 GMT+05:30">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a -->
+        <test-method status="PASS" signature="f()[pri:0, instance:Example.Test1@6e1ec318]" name="f" duration-ms="1457" started-at="2021-11-09T09:39:53 GMT+05:30" finished-at="2021-11-09T09:39:55 GMT+05:30">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f1()[pri:0, instance:Example.Test1@6e1ec318]" name="f1" duration-ms="2207" started-at="2021-11-09T09:39:55 GMT+05:30" finished-at="2021-11-09T09:39:57 GMT+05:30">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method status="PASS" signature="f2()[pri:0, instance:Example.Test1@6e1ec318]" name="f2" duration-ms="4702" started-at="2021-11-09T09:39:57 GMT+05:30" finished-at="2021-11-09T09:40:02 GMT+05:30">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method status="PASS" signature="f3()[pri:0, instance:Example.Test1@6e1ec318]" name="f3" duration-ms="1453" started-at="2021-11-09T09:40:02 GMT+05:30" finished-at="2021-11-09T09:40:03 GMT+05:30">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f3 -->
+        <test-method status="PASS" signature="f4()[pri:0, instance:Example.Test1@6e1ec318]" name="f4" duration-ms="87" started-at="2021-11-09T09:40:03 GMT+05:30" finished-at="2021-11-09T09:40:03 GMT+05:30">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f4 -->
+        <test-method status="PASS" signature="f5()[pri:0, instance:Example.Test1@6e1ec318]" name="f5" duration-ms="41" started-at="2021-11-09T09:40:03 GMT+05:30" finished-at="2021-11-09T09:40:03 GMT+05:30">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f5 -->
+        <test-method status="PASS" signature="f6()[pri:0, instance:Example.Test1@6e1ec318]" name="f6" duration-ms="761" started-at="2021-11-09T09:40:03 GMT+05:30" finished-at="2021-11-09T09:40:04 GMT+05:30">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f6 -->
+        <test-method status="PASS" signature="f7()[pri:0, instance:Example.Test1@6e1ec318]" name="f7" duration-ms="1848" started-at="2021-11-09T09:40:04 GMT+05:30" finished-at="2021-11-09T09:40:06 GMT+05:30">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f7 -->
+        <test-method status="PASS" signature="m()[pri:0, instance:Example.Test1@6e1ec318]" name="m" duration-ms="1960" started-at="2021-11-09T09:40:06 GMT+05:30" finished-at="2021-11-09T09:40:08 GMT+05:30">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m -->
+        <test-method status="PASS" signature="ms()[pri:0, instance:Example.Test1@6e1ec318]" name="ms" is-config="true" duration-ms="61" started-at="2021-11-09T09:40:08 GMT+05:30" finished-at="2021-11-09T09:40:08 GMT+05:30">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ms -->
+      </class> <!-- Example.Test1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
