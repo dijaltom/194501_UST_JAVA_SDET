@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class NewTest {
 	public WebDriver t;
 	public String url = "https://demo.guru99.com/test/newtours/register.php";
-	public String path = "C:\\\\Users\\\\ustjavasdetb426\\\\Downloads\\\\chromedriver_win32\\\\chromedriver.exe";
+	public String path = "D:\\UST\\chromedriver_win32\\chromedriver.exe";
 
 	@BeforeTest
 	public void beforeTest() {
