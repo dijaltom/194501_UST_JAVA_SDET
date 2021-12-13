@@ -56,16 +56,17 @@ public class Steps {
 		
 			
 			pop_up_blocker();
+			TimeUnit.SECONDS.sleep(3);
 		 if(t.findElements(By.className("results-count")).size() != 0) {
 				TimeUnit.SECONDS.sleep(2);
 				System.out.println("========>"+t.findElement(By.className("results-count")).getText());
 				TimeUnit.SECONDS.sleep(2);
 			}
 			System.out.println(i + ":" + t.getTitle());
-			TimeUnit.SECONDS.sleep(2);
+			TimeUnit.SECONDS.sleep(3);
 			
 		
-			t.findElement(By.xpath("/html/body/div[1]/header/div[2]/div/nav/div/ul/li[5]/span")).click();
+			t.findElement(By.xpath("//*[@id=\"topnav_wrapper\"]/ul/li[5]/span")).click();
 		}
 	}
 
