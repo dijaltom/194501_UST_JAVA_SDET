@@ -29,15 +29,13 @@ public class Tests {
 	@BeforeTest
 	public void before() throws MalformedURLException {
 		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability("deviceName", "POCO");
+		cap.setCapability("deviceName", "qwerty");
 		cap.setCapability("udid", "b3dad95f");
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("platformVersion", "11");
 		cap.setCapability("appPackage", "io.selendroid.testapp");
 		cap.setCapability("appActivity", "io.selendroid.testapp.HomeScreenActivity");
 		cap.setCapability("noReset", "true");
-		cap.setCapability("autoGrantPermissions", "true");
-		cap.setCapability("autoAcceptAlerts", "true");
 		String u = "http://127.0.0.1:4723/wd/hub";
 		URL url = new URL(u);
 		driver = new AndroidDriver<MobileElement>(url, cap);
@@ -197,7 +195,7 @@ public class Tests {
 
 	@Test
 	public static void Test7() throws InterruptedException {
-
+		TimeUnit.SECONDS.sleep(3);
 		driver.findElementById("io.selendroid.testapp:id/buttonStartWebview").click();
 		TimeUnit.SECONDS.sleep(3);
 		MobileElement text2 = driver.findElementByClassName("android.widget.EditText");

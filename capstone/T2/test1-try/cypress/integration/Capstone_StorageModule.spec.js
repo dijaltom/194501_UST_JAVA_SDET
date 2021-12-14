@@ -3,7 +3,7 @@
 
 const triple = async () => {
 
-    //close the pop-up window
+    cy.waitFor(1500);
     if (cy.get('.reveal-modal-bg').invoke('attr', 'style').should('contain', 'display: block;')) {
         cy.get("#authentication_popup > div.vert-wrapper > div > div.popup-text.text-center.vert.large-6.columns > a.close-reveal-modal.hide-mobile").click();
     }
@@ -11,6 +11,91 @@ const triple = async () => {
         undefined;
     }
 }
+
+describe('Testing Links Of Storage Unit', function() {
+    
+    it('Under Storage-Living Storage', function() {
+        cy.visit('https://www.urbanladder.com/');
+        cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click()
+        cy.contains('li','TV Units').find('a').click({force : true})
+        cy.contains('li','Bookshelves').find('a').click({force : true})
+        cy.contains('li','Showcases').find('a').click({force : true})
+        cy.contains('li','Wall Shelves').find('a').click({force : true})
+        cy.contains('li','Shoe Racks').find('a').click({force : true})
+        cy.contains('li','Prayer Units').find('a').click({force : true})
+        cy.contains('li','Entryway & Foyer').find('a').click({force : true})
+        cy.contains('li',' Corner Storage').find('a').click({force : true})
+        cy.contains('li','Living Room Sets').find('a').click({force : true})
+    })
+    
+   it('Under Storage-Bedroom Storage', function() {
+       cy.visit('https://www.urbanladder.com/');
+       cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click()
+       cy.contains('li','Cupboards').find('a').click({force : true})
+       
+       cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click({force : true})
+       cy.visit('https://www.urbanladder.com/chest-of-drawers?src=g_topnav_storage_bedroom-storage_chest-of-drawers')
+       
+       cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click()
+       cy.visit('https://www.urbanladder.com/bedside-tables?src=g_topnav_storage_bedroom-storage_bedside-tables')
+       
+       cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click()
+       cy.visit('https://www.urbanladder.com/dressers-table?src=g_topnav_storage_bedroom-storage_dressers-mirrors')
+       
+       cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click({force : true})
+       cy.visit('https://www.urbanladder.com/storage-chests?src=g_topnav_storage_bedroom-storage_storage-chests')
+    })
+
+    it('Under Storage-Dining Storage', function() {
+       cy.visit('https://www.urbanladder.com/');
+       cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click()
+       cy.visit('https://www.urbanladder.com/crockery-unit?src=g_topnav_storage_dining-storage_crockery-units')
+       
+       cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click()
+       cy.visit('https://www.urbanladder.com/kitchen-cabinets?src=g_topnav_storage_dining-storage_kitchen-cabinets-racks')
+       
+       cy.contains('li','Bar Cabinets').find('a').click({force : true})
+    })
+
+    it('Under Storage-Shop By Range', function() {
+       cy.visit('https://www.urbanladder.com/');
+       cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click()
+       cy.visit('https://www.urbanladder.com/galaxy-range?src=g_topnav_storage_shop-by-range_galaxy-range')
+       
+       cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click()
+       cy.visit('https://www.urbanladder.com/oslo-range?src=g_topnav_storage_shop-by-range_oslo-range')
+       
+       cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click()
+       cy.visit('https://www.urbanladder.com/vector-range?src=g_topnav_storage_shop-by-range_vector-range')
+       
+       cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click()
+       cy.visit('https://www.urbanladder.com/baltoro-range?src=g_topnav_storage_shop-by-range_baltoro-range')
+       
+       cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click()
+       cy.visit('https://www.urbanladder.com/fujiwara-range?src=g_topnav_storage_shop-by-range_fujiwara-range')
+       
+       cy.contains('li','Boeberg Range').find('a').click({force : true})
+       cy.contains('li','Zephyr Range').find('a').click({force : true})
+       cy.contains('li','Iwaki & Bayern Range').find('a').click({force : true})
+       cy.contains('li','Rhodes Range').find('a').click({force : true})
+       cy.contains('li','Malabar Range').find('a').click({force : true})
+       cy.contains('li','Taarkashi Range').find('a').click({force : true})
+    })
+})
+
+describe('Simple Test', function () {
+    // Test case
+    it('In Stock Test', function (){
+    // test step for URL launching
+    cy.visit("https://www.urbanladder.com/");
+    cy.waitFor(1500);
+    cy.get('.main-navigation > #topnav_wrapper > .topnav > .storageunit > .topnav_itemname').click()
+    cy.visit('https://www.urbanladder.com/bar-cabinet?src=g_topnav_storage_dining-storage_bar-cabinets')
+    cy.waitFor(1500);
+    cy.get('.optionsdata > #filters-form > .options > .option > #filters_availability_In_Stock_Only').click()
+    cy.get('.optionsdata > #filters-form > .options > .option > #filters_availability_In_Stock_Only').check('In Stock Only')
+    })
+})
 
 
 describe('urbanladder_testing-1', () => {
@@ -130,21 +215,22 @@ describe('urbanladder_testing-3', () => {
     })
     ////////////////////  tests  /////////////////////////////
     it('homepage_dropdown_menu-t1', () => {
+      
         cy.get('#filters_availability_In_Stock_Only').click({force:true})
-     
+        cy.waitFor(5000) 
+       // triple();
         cy.get('.item').contains('Recommended').trigger('mouseover');
         cy.waitFor(1000)
         cy.get('.option').contains('Price: Low to High').dblclick({ multiple: true })
         cy.waitFor(1000)
         cy.get('.item').contains('Recommended').trigger('mouseout');
-
-
     })
     it('bar_cabinets_test-1', () => {
-        cy.get('#filters_availability_In_Stock_Only').click()
-        triple();
+      
+        cy.get('#filters_availability_In_Stock_Only').click({force:true})
+     
         cy.waitFor(1000)
-
+        triple();
         cy.get('.item').contains('Recommended').trigger('mouseover');
         cy.waitFor(1000)
         cy.get('.option').contains('Price: Low to High').dblclick({ multiple: true })
@@ -157,15 +243,13 @@ describe('urbanladder_testing-3', () => {
         cy.get("#product_action_113395 > div.add-to-wishlist.text-center.wishproduct.dwishblock.authentication_popup.login-link").click({ force: true })
         cy.waitFor(1000)
         triple()
-        cy.waitFor(1000)
-        cy.get('.discounted-price').contains('₹2,124')
+        cy.get('.discounted-price').contains('₹2,249.10')
         cy.waitFor(200)
-        triple()
         cy.waitFor(5000)
         cy.get('#add-to-cart-button').click({ force: true })
         cy.get('.image').should('have.attr', 'data-hook', 'cart_item_image')
         cy.get('select').select(5).should('have.value', '6')
-        cy.get('.final-price').should('contain', '₹12,745')
+        cy.get('.final-price').should('contain', '₹13,495')
         cy.get('.priceItem__noCharge').should('contain', 'Free')
         cy.get("#update-cart > div > div.action-links.clearfix > div.large-4.columns.btn_wrap").contains('Checkout').click({ force: true })
         cy.get('#order_email').type('abc');
@@ -187,8 +271,6 @@ describe('urbanladder_testing-3', () => {
      
     })
 })
-
-
 
 
 

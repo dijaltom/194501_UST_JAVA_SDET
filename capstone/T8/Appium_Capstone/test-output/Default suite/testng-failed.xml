@@ -5,12 +5,15 @@
     <classes>
       <class name="Tests">
         <methods>
+          <include name="Test2"/>
           <include name="Test5"/>
+          <include name="Test4"/>
           <include name="Test7"/>
           <include name="Test6"/>
           <include name="Test9"/>
           <include name="Test8"/>
           <include name="before"/>
+          <include name="Test1"/>
           <include name="Test3"/>
         </methods>
       </class> <!-- Tests -->
