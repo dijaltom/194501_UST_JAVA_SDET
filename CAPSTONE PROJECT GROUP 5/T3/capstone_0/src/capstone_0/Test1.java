@@ -24,9 +24,7 @@ public class Test1 {
 			t.navigate().to("https://www.urbanladder.com/");
 			t.manage().window().maximize();
 			String[] l = { "Dressers & Mirrors", "Living Storage", "Bedroom Storage", "Dining Storage", "Shop by Range",
-					"TV Units", "Bookshelves", "Showcases", "Wall Shelves", "Shoe Racks", "Prayer Units",
-					"Entryway & Foyer", "Corner Storage",
-
+					
 			};
 			t.findElement(By.xpath("/html/body/div[1]/header/div[2]/div/nav/div/ul/li[5]/span")).click();
 			Actions action = new Actions(t);
@@ -86,7 +84,7 @@ public class Test1 {
 					}
 				}
 
-				TimeUnit.SECONDS.sleep(1);
+				TimeUnit.SECONDS.sleep(2);
 				t.findElement(By.xpath("/html/body/div[1]/header/div[2]/div/nav/div/ul/li[5]/span")).click();
 			}
 

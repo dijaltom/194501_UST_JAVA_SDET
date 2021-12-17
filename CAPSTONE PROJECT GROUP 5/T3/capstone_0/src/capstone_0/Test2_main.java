@@ -48,7 +48,7 @@ public class Test2_main {
 			System.out.println(dropdownEl.get(i).getText()+"- button clicked");
 			Thread.sleep(5000);
 		}
-	
+		//checking searchbox
 		WebElement search = driver.findElement(By.id("search"));
 		search.sendKeys("Astrid TV Unit");
 		driver.findElement(By.id("search_button")).click();
