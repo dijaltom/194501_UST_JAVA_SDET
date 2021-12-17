@@ -1,53 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="4" failed="5" skipped="0">
+<testng-results ignored="0" total="9" passed="0" failed="9" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-16T12:14:52 IST" name="Default suite" finished-at="2021-12-16T12:17:09 IST" duration-ms="137827">
+  <suite started-at="2021-12-17T10:35:38 IST" name="Default suite" finished-at="2021-12-17T10:36:01 IST" duration-ms="23134">
     <groups>
     </groups>
-    <test started-at="2021-12-16T12:14:52 IST" name="Default test" finished-at="2021-12-16T12:17:09 IST" duration-ms="137827">
+    <test started-at="2021-12-17T10:35:38 IST" name="Default test" finished-at="2021-12-17T10:36:01 IST" duration-ms="23134">
       <class name="Tests">
-        <test-method is-config="true" signature="before()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-16T12:14:52 IST" name="before" finished-at="2021-12-16T12:15:07 IST" duration-ms="15795" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-17T10:35:38 IST" name="before" finished-at="2021-12-17T10:35:46 IST" duration-ms="8715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="Test1()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-16T12:15:08 IST" name="Test1" finished-at="2021-12-16T12:15:12 IST" duration-ms="4628" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method signature="Test2()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-16T12:15:12 IST" name="Test2" finished-at="2021-12-16T12:15:17 IST" duration-ms="4750" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method signature="Test3()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-16T12:15:17 IST" name="Test3" finished-at="2021-12-16T12:15:30 IST" duration-ms="13452" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test3 -->
-        <test-method signature="Test4()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-16T12:15:30 IST" name="Test4" finished-at="2021-12-16T12:15:37 IST" duration-ms="6841" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test4 -->
-        <test-method signature="Test5()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-16T12:15:37 IST" name="Test5" finished-at="2021-12-16T12:17:00 IST" duration-ms="82700" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="Test1()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-17T10:35:47 IST" name="Test1" finished-at="2021-12-17T10:35:49 IST" duration-ms="2077" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: f29e265f-aa06-4ebc-8252-7a6934390a97
-*** Element info: {Using=id, value=android:id/text1}]]>
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
+*** Element info: {Using=id, value=android:id/title}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: f29e265f-aa06-4ebc-8252-7a6934390a97
-*** Element info: {Using=id, value=android:id/text1}
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
+*** Element info: {Using=id, value=android:id/title}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -75,7 +57,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at Tests.Test5(Tests.java:155)
+at Tests.Test1(Tests.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -106,30 +88,348 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="Test2()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-17T10:35:49 IST" name="Test2" finished-at="2021-12-17T10:35:51 IST" duration-ms="2041" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
+*** Element info: {Using=id, value=io.selendroid.testapp:id/input_adds_check_box}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
+*** Element info: {Using=id, value=io.selendroid.testapp:id/input_adds_check_box}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at Tests.Test2(Tests.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method signature="Test3()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-17T10:35:51 IST" name="Test3" finished-at="2021-12-17T10:35:53 IST" duration-ms="2038" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
+*** Element info: {Using=id, value=io.selendroid.testapp:id/showToastButton}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
+*** Element info: {Using=id, value=io.selendroid.testapp:id/showToastButton}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at Tests.Test3(Tests.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method signature="Test4()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-17T10:35:53 IST" name="Test4" finished-at="2021-12-17T10:35:56 IST" duration-ms="3039" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
+*** Element info: {Using=id, value=io.selendroid.testapp:id/visibleTextView}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
+*** Element info: {Using=id, value=io.selendroid.testapp:id/visibleTextView}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at Tests.isElementPresent(Tests.java:290)
+at Tests.Test4(Tests.java:108)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test4 -->
+        <test-method signature="Test5()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-17T10:35:56 IST" name="Test5" finished-at="2021-12-17T10:35:56 IST" duration-ms="26" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
+*** Element info: {Using=id, value=io.selendroid.testapp:id/waitingButtonTest}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
+*** Element info: {Using=id, value=io.selendroid.testapp:id/waitingButtonTest}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at Tests.Test5(Tests.java:124)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test5 -->
-        <test-method signature="Test6()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-16T12:17:00 IST" name="Test6" finished-at="2021-12-16T12:17:03 IST" duration-ms="3286" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="Test6()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-17T10:35:56 IST" name="Test6" finished-at="2021-12-17T10:35:58 IST" duration-ms="2029" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: f29e265f-aa06-4ebc-8252-7a6934390a97
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
 *** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.TextView}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: f29e265f-aa06-4ebc-8252-7a6934390a97
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
 *** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.TextView}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -189,30 +489,28 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test6 -->
-        <test-method signature="Test7()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-16T12:17:03 IST" name="Test7" finished-at="2021-12-16T12:17:06 IST" duration-ms="3158" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="Test7()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-17T10:35:58 IST" name="Test7" finished-at="2021-12-17T10:36:01 IST" duration-ms="3028" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: f29e265f-aa06-4ebc-8252-7a6934390a97
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
 *** Element info: {Using=id, value=io.selendroid.testapp:id/buttonStartWebview}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: f29e265f-aa06-4ebc-8252-7a6934390a97
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
 *** Element info: {Using=id, value=io.selendroid.testapp:id/buttonStartWebview}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -267,30 +565,28 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test7 -->
-        <test-method signature="Test8()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-16T12:17:06 IST" name="Test8" finished-at="2021-12-16T12:17:08 IST" duration-ms="2073" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="Test8()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-17T10:36:01 IST" name="Test8" finished-at="2021-12-17T10:36:01 IST" duration-ms="11" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: f29e265f-aa06-4ebc-8252-7a6934390a97
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
 *** Element info: {Using=id, value=io.selendroid.testapp:id/spinner_webdriver_test_data}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: f29e265f-aa06-4ebc-8252-7a6934390a97
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
 *** Element info: {Using=id, value=io.selendroid.testapp:id/spinner_webdriver_test_data}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -350,30 +646,28 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test8 -->
-        <test-method signature="Test9()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-16T12:17:08 IST" name="Test9" finished-at="2021-12-16T12:17:09 IST" duration-ms="987" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="Test9()[pri:0, instance:Tests@1b11171f]" started-at="2021-12-17T10:36:01 IST" name="Test9" finished-at="2021-12-17T10:36:01 IST" duration-ms="15" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: f29e265f-aa06-4ebc-8252-7a6934390a97
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
 *** Element info: {Using=id, value=io.selendroid.testapp:id/buttonTest}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CA3N5K1', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {appActivity: io.selendroid.testapp.HomeS..., appPackage: io.selendroid.testapp, deviceName: qwerty, noReset: true, platformName: android, platformVersion: 11, udid: b3dad95f}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: b3dad95f, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: b3dad95f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 91, takesScreenshot: true, udid: b3dad95f, viewportRect: {height: 2174, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: f29e265f-aa06-4ebc-8252-7a6934390a97
+Session ID: a3a343e3-457f-4cd2-8fe4-c34550ab85aa
 *** Element info: {Using=id, value=io.selendroid.testapp:id/buttonTest}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -433,7 +727,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test9 -->
